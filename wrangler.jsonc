@@ -1,0 +1,24 @@
+{
+  "name": "edgesight",
+  "main": "src/index.ts",
+  "compatibility_date": "2025-03-07",
+  "compatibility_flags": ["nodejs_compat"],
+  "observability": {
+    "enabled": true,
+    "head_sampling_rate": 1
+  },
+  "browser": [
+    {
+      "binding": "BROWSER"
+    }
+  ],
+  "r2_buckets": [
+    {
+      "binding": "SCREENSHOT_BUCKET",
+      "bucket_name": "screenshots-bucket"
+    }
+  ],
+  "vars": {
+    "PUBLIC_CDN_URL": "https://pub-xxxxxxxxxxxxxxxxx.r2.dev"
+  }
+}
